@@ -86,6 +86,6 @@
     }
   
     // Update the "lastDate" in local storage
-    localStorage.setItem("lastDate", currentDate);
+    localStorage.setItem("previousDate", currentDate);
   }, 1000); // Check every second
   
