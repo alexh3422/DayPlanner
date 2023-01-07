@@ -1,5 +1,14 @@
 * {
   font-family: "Abel", sans-serif;
+  text-shadow: 4px 4px 4px #aaa;
+}
+
+header {
+  background-color: #06aed5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  border-radius: 15px;
 }
 
 body {

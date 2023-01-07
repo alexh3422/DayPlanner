@@ -61,11 +61,11 @@
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
     //
     // TODO: Add code to display the current date in the header of the page.
-    console.log(dayjs().format("dddd, MMMM D, YYYY, hh:mm:ss a"));
+  
 
   const currentDay = dayjs().format("dddd, MMMM D, YYYY, hh:mm:ss a");
 
-  $("#currentDay").text(currentDay);
+  $("#currentDay").text(currentDay);  
   setInterval(function () {
     $("#currentDay").text(dayjs().format("dddd, MMMM D, YYYY, hh:mm:ss a"));
   }
