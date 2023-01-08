@@ -14,8 +14,6 @@
       localStorage
         .setItem(time, text);
     });
-
-
     //
     // TODO: Add code to apply the past, present, or future class to each time
     // block by comparing the id to the current hour. HINTS: How can the id
@@ -44,8 +42,6 @@
     
       setInterval(updateTimeBlocks, 1000);
     });
-    
-
     //
     // TODO: Add code to get any user input that was saved in localStorage and set
     // the values of the corresponding textarea elements. HINT: How can the id
@@ -61,8 +57,6 @@
     $("#hour-17 .description").val(localStorage.getItem("hour-17"));
     //
     // TODO: Add code to display the current date in the header of the page.
-  
-
   const currentDay = dayjs().format("dddd, MMMM D, YYYY, hh:mm:ss a");
 
   $("#currentDay").text(currentDay);  
@@ -79,7 +73,7 @@
     let currentDate = dayjs().format("YYYY-MM-DD");
   
     // Check if the date has changed since the last time this function was called
-    if (currentDate !== localStorage.getItem("lastDate")) {
+    if (currentDate !== localStorage.getItem("previousDate")) {
       // The date has changed, so reset the page
       localStorage.clear();
       location.reload();
